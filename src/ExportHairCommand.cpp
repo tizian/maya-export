@@ -21,7 +21,7 @@ MStatus ExportHairCommand::doIt(const MArgList &args) {
     std::string str;
 
     // Input arguments
-    MString filename = "out";
+    MString filename = "out.curves";
 
     // Parse the arguments
     for (unsigned int i = 0; i < args.length(); i++) {
@@ -65,7 +65,6 @@ MStatus ExportHairCommand::doIt(const MArgList &args) {
     std::string path = FILE_OUTPUT_PATH;
     path += "/";
     path += filename.asChar();
-    path += ".curves";
 
     MGlobal::displayInfo(path.c_str());
     std::ofstream file;

@@ -21,7 +21,7 @@ MStatus ExportCurvesCommand::doIt(const MArgList &args) {
     std::string str;
 
     // Input arguments
-    MString filename = "out";
+    MString filename = "out.curves";
     int nVertices = 100;
 
     // Parse the arguments
@@ -61,7 +61,6 @@ MStatus ExportCurvesCommand::doIt(const MArgList &args) {
     std::string path = FILE_OUTPUT_PATH;
     path += "/";
     path += filename.asChar();
-    path += ".curves";
 
     MGlobal::displayInfo(path.c_str());
     std::ofstream file;
