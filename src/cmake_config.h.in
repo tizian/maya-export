@@ -1,0 +1,3 @@
+#pragma once
+
+#define FILE_OUTPUT_PATH "@FILE_OUTPUT_PATH@"
