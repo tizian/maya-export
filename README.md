@@ -2,7 +2,7 @@
 
 ## Description
 
-Collection of custom Maya export commands.
+Collection of custom Maya commands to export various geometry, for example to use with an external rendering system.
 
 ## Commands
 
