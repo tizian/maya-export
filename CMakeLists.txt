@@ -13,6 +13,8 @@ endif()
 set(NAME "maya-export")
 
 set(SOURCE_FILES
+	"src/ExportHairCommand.cpp"
+	"src/ExportCurvesCommand.cpp"
 	"src/main.cpp"
 )
 
@@ -23,6 +25,7 @@ include_directories(${CMAKE_BINARY_DIR}/generated)
 find_package(Maya REQUIRED)
 
 include_directories(
+	"${PROJECT_SOURCE_DIR}/src"
 	${MAYA_INCLUDE_DIR}
 )
 
