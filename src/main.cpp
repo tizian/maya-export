@@ -4,7 +4,7 @@
 #include "ExportCurvesCommand.h"
 
 MStatus initializePlugin(MObject obj) {
-    MFnPlugin plugin(obj, "Tizian Zeltner", "1.0", "Any");
+    MFnPlugin plugin(obj, "Tizian Zeltner", "0.1", "Any");
     plugin.registerCommand("exportHair", ExportHairCommand::creator);
 	plugin.registerCommand("exportCurves", ExportCurvesCommand::creator);
     return MS::kSuccess;
